@@ -7,17 +7,17 @@ const linkClass = ({ isActive }) =>
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 border-b border-base-300 px-4 md:px-10">
+    <div className="px-4 border-b navbar bg-base-100 border-base-300 md:px-10">
       <div className="flex-1">
         <NavLink to="/" className="flex items-baseline gap-2">
           <span className="font-serif text-2xl font-semibold">Field Notes</span>
-          <span className="stamp text-primary hidden sm:inline-block">est. 2026</span>
+          <span className="hidden stamp text-primary sm:inline-block">est. 2026</span>
         </NavLink>
       </div>
 
       {/* Desktop nav */}
-      <div className="hidden md:flex gap-6 items-center">
-        <NavLink to="/" end className={linkClass}>Home</NavLink>
+      <div className="items-center hidden gap-6 md:flex">
+        <NavLink to="/" end className={linkClass}>Homes</NavLink>
         <NavLink to="/blog" className={linkClass}>Blog</NavLink>
         <NavLink to="/about" className={linkClass}>About</NavLink>
       </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       <div className="dropdown dropdown-end md:hidden">
         <label tabIndex={0} className="btn btn-ghost btn-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
