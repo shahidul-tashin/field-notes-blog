@@ -17,7 +17,7 @@ export default function Navbar() {
 
       {/* Desktop nav */}
       <div className="items-center hidden gap-6 md:flex">
-        <NavLink to="/" end className={linkClass}>Homes</NavLink>
+        <NavLink to="/" end className={linkClass}>Home new</NavLink>
         <NavLink to="/blog" className={linkClass}>Blog</NavLink>
         <NavLink to="/about" className={linkClass}>About</NavLink>
       </div>
