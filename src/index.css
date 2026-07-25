@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2ECDD;
+  background-image:
+    repeating-linear-gradient(transparent, transparent 27px, rgba(35,35,35,0.05) 28px);
+}
+
+/* Signature element: a rotated library "stamp" used for dates & tags */
+.stamp {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+  transform: rotate(-3deg);
+}
+
+.catalog-card {
+  border: 1px solid #DDD2B8;
+  border-top: 6px solid #8C2F22;
+  background: #F8F4E9;
+}
+
+/* Focus visibility for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #2F6E5E;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
